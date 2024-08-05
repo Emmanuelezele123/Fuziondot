@@ -25,7 +25,7 @@ app.use('/api/auth', authRoutes);
 
 // Middleware setup
 app.use(cors({
-    origin: '*', // Adjust this to your specific origin as needed
+    origin: 'http://localhost:3000', // Adjust this to your specific origin as needed
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'X-Requested-With', 'Accept'],
   }));
